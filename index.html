@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" type=text/css href="styles.css">
+    <script src="JScode.js"></script>
+    <title>Calculator</title>
+  </head>
+  <body>
+    <h1 id="calHeading">Calculator</h1>
+
+    <div id="calculator">
+        <div id="output">
+            <form name="form">
+                <input type="text" class="field" name="field">
+            </form>
+        </div>
+        <div id="keypad">
+            <form>
+              <input type="button" class="button" onclick="erase()" value="C">
+              <input type="button" class="button" onclick="backspace()" value="CE">
+              <input type="button" class="button" onclick="neg()" value="(-)">
+              <input type="button" class="button" onclick="input('/')" value="/">
+              <input type="button" class="button" onclick="input(7)" value="7">
+              <input type="button" class="button" onclick="input(8)" value="8">
+              <input type="button" class="button" onclick="input(9)" value="9">
+              <input type="button" class="button" onclick="input('*')" value="*">
+              <input type="button" class="button" onclick="input(4)" value="4">
+              <input type="button" class="button" onclick="input(5)" value="5">
+              <input type="button" class="button" onclick="input(6)" value="6">
+              <input type="button" class="button" onclick="input('-')" value="-">
+              <input type="button" class="button" onclick="input(1)" value="1">
+              <input type="button" class="button" onclick="input(2)" value="2">
+              <input type="button" class="button" onclick="input(3)" value="3">
+              <input type="button" class="button" onclick="input('+')" value="+">
+              <input type="button" class="button" onclick="input('.')" value=".">
+              <input type="button" class="button" onclick="input(0)" value="0">
+              <input style="width: 110px;" type="button" class="button" onclick="result()" value="=">
+            </form>
+        </div>
+    </div>
+
+  </body>
+</html>
